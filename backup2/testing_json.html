@@ -1,0 +1,41 @@
+<html>
+<head>
+	
+</head>
+<body>
+	<form method="POST" id="my-post">
+		<input type="username" placeholder="username" id="username">
+		<input type="password" placeholder="password" id="password">
+		<input type="button" onclick="login()" value="login">
+	</form>
+	<script>
+		function login(){
+			const username = document.querySelector('#username').value;
+			  const password = document.querySelector('#password').value;
+			  const url = "http://localhost/laravel/apigenius/public/oauth/token";
+			  const formData = new FormData();
+			  formData.append("username",username);
+			  formData.append("password",password);
+			  formData.append("grant_type","password");
+			  formData.append("client_id",2);
+			  formData.append("client_secret","4FEOV2c8NJEjw6tyNc7xXPBCjoOkaUCv3f1Aj5Pn");
+
+			  fetch(url,{
+			  	method : "POST",
+			  	body : formData,
+			  })
+			    .then(response => response.json())
+			    .then(function(response){
+			    	var hasil = JSON.parse(JSON.stringify(response));
+			    	if(hasil['token_type']=="Bearer"){
+			    		alert('Success2:'+hasil['token_type']);
+			    	}else{
+			    		alert('Success:'+hasil['error']);
+			    	}
+			    });
+			 //    .then(response => console.log('Success:', JSON.parse(JSON.stringify(response))))
+				// .catch(error => console.error('Error:', error));
+		}
+	</script>
+</body>
+</html>

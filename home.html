@@ -1,0 +1,57 @@
+
+<ons-page id="home">
+  <ons-toolbar style="background:#e74c3c;color:#fff">
+	<div class="center" style="color:#fff;"><img src="assets/images/logo_fix.png" height="80%" style="margin-top:2px;"></div>
+	<div class="right">
+		<ons-toolbar-button icon="md-face" style="color:#fff;"></ons-toolbar-button>
+	</div>
+  </ons-toolbar> 
+  <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="z-index:-99999; height:200px;">
+    <ons-carousel-item style="background-color: #085078;">
+      <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+        BLUE
+      </div>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #373B44;">
+      <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+        DARK
+      </div>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #D38312;">
+      <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+        ORANGE
+      </div>
+    </ons-carousel-item>
+  </ons-carousel>
+  <ons-row style="margin-top:30px;">
+	<ons-col><center><ons-button modifier="quiet" ripple onclick="history()"><i class="material-icons" style="font-size:50px">history</i></center></ons-button></ons-col>
+	<ons-col><center><ons-button modifier="quiet" ripple onclick="input()"><i class="material-icons" style="font-size:50px;">assignment</i></center></ons-button></ons-col>
+	<ons-col><center><ons-button modifier="quiet" ripple><i class="material-icons" style="font-size:50px;">article</i></center></ons-button></ons-col>
+  </ons-row>
+  <ons-row style="">
+	<ons-col><center><p>History Jalan Rusak</p></center></ons-col>
+	<ons-col><center><p>Lapor Jalan Rusak</p></center></ons-col>
+	<ons-col><center><p>Berita</p></center></ons-col>
+  </ons-row>
+  <ons-row style="margin-top:30px;">
+	<ons-col><center><ons-button modifier="quiet" ripple><i class="material-icons" style="font-size:50px">perm_device_information</i></center></ons-button></ons-col>
+	<ons-col><center><ons-button modifier="quiet" ripple><i class="material-icons" style="font-size:50px;">help</i></center></ons-button></ons-col>
+	<ons-col><center><ons-button modifier="quiet" ripple onclick="profil()"><i class="material-icons" style="font-size:50px;">account_circle</i></center></ons-button></ons-col>
+  </ons-row>
+  <ons-row style="">
+	<ons-col><center><p>Tentang Kami</p></center></ons-col>
+	<ons-col><center><p>Bantuan</p></center></ons-col>
+	<ons-col><center><p>Profil</p></center></ons-col>
+  </ons-row>
+  <ons-card>
+	<img src="assets/images/article1.jpg" width="100%">
+	<div class="title">
+		Artikel Pertama
+	</div>
+	<div class="content">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+		<ons-button><small>Selengkapnya</small></ons-button>
+		
+	</div>
+  </ons-card>
+</ons-page>

@@ -1,0 +1,41 @@
+<ons-page id="signin">
+	  
+	  <div style="text-align: center; margin-top: 50px">
+	  	<ons-row>
+	  		<ons-col><img src="assets/images/telkom.png" width="100" align="right" style="margin-bottom:40px;"></ons-col>
+	  	</ons-row>
+	  	<img src="assets/images/logo.jpeg" width="150" align="center" style="margin-bottom:30px;">
+	  <p>
+	    <ons-input id="username" placeholder="Username" modifier="underbar"></ons-input>
+	  </p>
+
+	  <p>
+	    <ons-input
+	      id="password"
+	      placeholder="Password"
+	      type="password"
+	      modifier="underbar"
+	    >
+	    </ons-input>
+	  </p>
+	  
+	  <p>
+	  	Login Sebagai : 
+	  	<ons-select id="choose-sel">
+		    <option value="basic">Sales</option>
+		    <option value="material">Tek. Pasang</option>
+		    <option value="underbar">Tek. Gangguan</option>
+		    <option value="underbar">Collection</option>
+		  </ons-select>
+	  </p>
+	  <p>
+	  	<ons-checkbox 
+	  		value="remember me"></ons-checkbox> Ingat
+	  		/ <a href="#">Forgot Password</a>
+	  </p>
+	  <p>
+	    <ons-button onclick="login()">Sign in</ons-button>
+	  </p><br /><br />
+	  </div>
+
+	</ons-page>

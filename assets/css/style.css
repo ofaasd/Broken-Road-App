@@ -1,0 +1,8 @@
+.row{
+	width:100%;
+	min-height:10px;
+	overflow:hidden;
+}
+.back-button--material__icon{
+	fill:#fff !important;
+}

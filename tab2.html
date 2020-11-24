@@ -1,0 +1,24 @@
+<ons-page id="tab2" onload="mytab2()">
+	<div style="padding:8px;" class="row">
+		 <ons-input name="keyword" id="keyword" placeholder="Search something" style="width:56%; margin-top:20px; vertical-align:none;"></ons-input> 
+		 <ons-select class="select" id="status" style="width:25%; height:45px; padding:5px;margin-top:5px;">
+		  <select class="select-input" id="by" style="vertical-align:none;">
+		    <option value="1">By. Nama</option>
+		    <option value="2">By. No. Order</option>
+		  </select>
+		</ons-select>
+		<div style="width:10%;padding:15px 0;display:inline-block;position:relative">
+			<ons-button onclick="search()" style="width:100%"><center><ons-icon
+		    icon="md-search"></ons-icon></center></ons-button>
+		</div>
+	</div>
+	<ons-fab position="bottom right" style="background:#e74c3c;color:#fff;" onclick="input()">
+	  <ons-icon
+	    icon="md-plus">
+	  </ons-icon>
+	</ons-fab>
+	<div id="list-pelanggan">
+
+	</div>
+	
+</ons-page>

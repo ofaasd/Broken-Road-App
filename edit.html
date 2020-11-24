@@ -1,0 +1,33 @@
+<ons-page id="input">
+	<ons-toolbar style="background:#e74c3c;color:#fff;">
+	  <div class="left" style="color:#fff;"><ons-back-button style="color:#fff;"></ons-back-button></div>
+      <div class="center" style="color:#fff">Edit Jalan Rusak</div>
+	</ons-toolbar>
+	<ons-card>
+		<div id="images">
+
+		</div>
+	</ons-card>
+	<ons-card>
+		<input type="hidden" name="id" id="ids">
+		<div id="map_canvas" style="width:100%; height:300px; margin-bottom:10px;"></div><br /><br />
+		<ons-input
+		  type="hidden"
+		  placeholder="Latitude"
+		  id="lat"
+		  modifier="underbar">
+		</ons-input>
+		<ons-input
+		  type="hidden"
+		  placeholder="Longitude"
+		  id="lng"
+		  modifier="underbar">
+		</ons-input>
+		<label for="fotorumah">Keterangan</label><br />
+		<ons-input
+		  type="text"
+		  modifier="underbar" id="keterangan" style="width:100%"> 
+		</ons-input><br /><br />
+		<ons-button onclick="update()" style="width:100%"><center>Simpan</center></ons-button>
+	</ons-card>
+</ons-page>

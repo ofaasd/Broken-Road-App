@@ -1,0 +1,42 @@
+<ons-page id="input">
+	<ons-toolbar style="background:#e74c3c;color:#fff;">
+	  <div class="left" style="color:#fff;"><ons-back-button style="color:#fff;"></ons-back-button></div>
+      <div class="center" style="color:#fff">Edit Pelanggan Baru</div>
+	</ons-toolbar>
+	<ons-card>
+		<div id="images">
+
+		</div>
+	</ons-card>
+	<ons-card>
+		<input type="hidden" name="id" id="ids">
+		<label for="username">Nama Pelanggan</label><br />
+		<ons-input
+		  type="text"
+		  modifier="underbar" id="nama" style="width:100%">
+		</ons-input><br /><br />
+		<label for="nohp">NO. HP</label><br />
+		<ons-input
+		  type="text"
+		  modifier="underbar" id="nohp" style="width:100%">
+		</ons-input><br /><br />
+		<label for="no.hp">No. HP Alternatif</label><br />
+		<ons-input
+		  type="text"
+		  modifier="underbar" id="nohpalt" style="width:100%"> 
+		</ons-input><br /><br />
+		<label for="fotorumah">Status</label><br />
+		<ons-select class="select"  style="width:100%">
+		  <select class="select-input" id="statuss">
+		    <option value="pasang">Pasang Baru</option>
+		    <option value="gangguan">Gangguan</option>
+		  </select>
+		</ons-select>
+		<label for="fotorumah">Keterangan</label><br />
+		<ons-input
+		  type="text"
+		  modifier="underbar" id="keterangan" style="width:100%"> 
+		</ons-input><br /><br />
+		<ons-button onclick="update()" style="width:100%"><center>Simpan</center></ons-button>
+	</ons-card>
+</ons-page>
